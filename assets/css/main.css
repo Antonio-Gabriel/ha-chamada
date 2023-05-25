@@ -1,0 +1,110 @@
+@import './root.css';
+
+.progress-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  justify-content: center;
+
+  display: none;
+}
+
+.progress-tab.tab-1 .content,
+.progress-tab.tab-2 .content,
+.progress-tab.tab-3 .content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.8rem;
+  max-width: 28rem;
+
+  margin-bottom: 4.2rem;
+}
+
+.progress-tab.tab-1 .content h1,
+.progress-tab.tab-2 .content h1,
+.progress-tab.tab-3 .content h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--dark);
+}
+
+.progress-tab.tab-1 .content p,
+.progress-tab.tab-2 .content p,
+.progress-tab.tab-3 .content p {
+  color: var(--gray-400);
+  font-family: var(--secondary-font);
+  font-size: 1.3rem;
+
+  line-height: 1.9rem;
+}
+
+.progress-tab.tab-2 .content {
+  margin-bottom: 2.2rem;
+  margin-top: 3.2rem;
+}
+
+.progress-tab.tab-3 header {
+  align-self: flex-end;
+  padding: 3.2rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Button and steps */
+
+.next-button {
+  border: 0;
+  width: 19.2rem;
+  height: 6.2rem;
+  text-align: center;
+
+  border-radius: 1.2rem;
+  background-color: var(--primary);
+  color: var(--light);
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  transition: all ease-in-out 0.2s;
+}
+
+.next-button:hover {
+  filter: brightness(0.8);
+}
+
+.progress-tab:not(.active) {
+  display: none;
+}
+
+/* Seps */
+.step {
+  width: 3.8rem;
+  height: 0.1rem;
+  margin: 0 0.2rem;
+  background-color: #b9b5b5;
+
+  border: none;
+  border-radius: 1.2rem;
+
+  display: inline-block;
+}
+
+/* Mark the active step: */
+.step.active {
+  width: 7.6rem;
+  background-color: var(--dark);
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04aa6d;
+}
+
+.onboarding-controls {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
