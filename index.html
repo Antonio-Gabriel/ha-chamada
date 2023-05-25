@@ -1,19 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-AO">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/ha-chamada.png" type="image/x-icon">
-    
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/ha-chamada.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Há Chamada</title>
 
-    <link rel="manifest" href="./manifest/manifest.json">
-    <meta name="theme-color" content="#4845D2"/>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- <link rel="manifest" href="./manifest/manifest.json" /> -->
+    <meta name="theme-color" content="#4845D2" />
     <!-- /manifest -->
-</head>
-<body>
-    
-    <script src="./app.js"></script>
-</body>
+
+    <!-- animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="progress-tab tab-1">
+          <div data-aos="fade-down" data-aos-delay="200">
+            <img
+              src="./assets/images/location image.svg"
+              alt="location shape mixed by image"
+            />
+          </div>
+
+          <div
+            class="content"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-mirror="false"
+          >
+            <h1>Comece já as suas chamadas de forma menos custosa</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="400">
+            <button class="next-button">
+              Mbora telefonar
+            </button>
+          </div>
+        </div>
+
+        <div class="progress-tab tab-2">
+          <div class="content">
+            <h1>Tenha os serviços ao seu dispor 24h</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="./assets/images/anywhere.svg"
+              alt="anywhere shape mixed by image"
+            />
+          </div>
+
+          <div>
+            <button class="next-button">
+              Próximo passo
+            </button>
+          </div>
+        </div>
+
+        <div class="progress-tab tab-3">
+          <header>
+            <a href="#">Há Chamada</a>
+          </header>
+
+          <div>
+            <img
+              src="./assets/images/done.svg"
+              alt="done shape mixed by image"
+            />
+          </div>
+
+          <div class="content">
+            <h1>Well done!, agora mbora começar com quem quiser.</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable
+            </p>
+          </div>
+
+          <div>
+            <button class="next-button">
+              Começar
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Circles which indicates the steps of the form: -->
+    <div class="onboarding-controls">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+
+    <!-- <script src="./app.js"></script> -->
+    <script src="./scripts/onboarding.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+  </body>
 </html>
