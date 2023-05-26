@@ -28,84 +28,79 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="progress-tab tab-1">
-          <div data-aos="fade-down" data-aos-delay="200">
-            <img
-              src="./assets/images/location image.svg"
-              alt="location shape mixed by image"
-            />
-          </div>
-
-          <div
-            class="content"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-mirror="false"
-          >
-            <h1>Comece já as suas chamadas de forma menos custosa</h1>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of
-            </p>
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="400">
-            <button class="next-button">
-              Mbora telefonar
-            </button>
-          </div>
+    <main class="container">
+      <div class="progress-tab tab-1">
+        <div data-aos="fade-down" data-aos-delay="200">
+          <img
+            src="./assets/images/location image.svg"
+            alt="location shape mixed by image"
+          />
         </div>
 
-        <div class="progress-tab tab-2">
-          <div class="content">
-            <h1>Tenha os serviços ao seu dispor 24h</h1>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable
-            </p>
-          </div>
-
-          <div>
-            <img
-              src="./assets/images/anywhere.svg"
-              alt="anywhere shape mixed by image"
-            />
-          </div>
-
-          <div>
-            <button class="next-button">
-              Próximo passo
-            </button>
-          </div>
+        <div
+          class="content"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-mirror="false"
+        >
+          <h1>Comece já as suas chamadas de forma menos custosa</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of
+          </p>
         </div>
 
-        <div class="progress-tab tab-3">
-          <header>
-            <a href="#">Há Chamada</a>
-          </header>
+        <div data-aos="fade-up" data-aos-delay="400">
+          <button class="next-button">
+            Mbora telefonar
+          </button>
+        </div>
+      </div>
 
-          <div>
-            <img
-              src="./assets/images/done.svg"
-              alt="done shape mixed by image"
-            />
-          </div>
+      <div class="progress-tab tab-2">
+        <div class="content">
+          <h1>Tenha os serviços ao seu dispor 24h</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable
+          </p>
+        </div>
 
-          <div class="content">
-            <h1>Well done!, agora mbora começar com quem quiser.</h1>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable
-            </p>
-          </div>
+        <div>
+          <img
+            src="./assets/images/anywhere.svg"
+            alt="anywhere shape mixed by image"
+          />
+        </div>
 
-          <div>
-            <button class="next-button">
-              Começar
-            </button>
-          </div>
+        <div>
+          <button class="next-button">
+            Próximo passo
+          </button>
+        </div>
+      </div>
+
+      <div class="progress-tab tab-3">
+        <header>
+          <a href="#">Há Chamada</a>
+        </header>
+
+        <div>
+          <img src="./assets/images/done.svg" alt="done shape mixed by image" />
+        </div>
+
+        <div class="content">
+          <h1>Well done!, agora mbora começar com quem quiser.</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable
+          </p>
+        </div>
+
+        <div>
+          <button class="next-button">
+            Começar
+          </button>
         </div>
       </div>
     </main>
@@ -118,7 +113,11 @@
     </div>
 
     <!-- <script src="./app.js"></script> -->
-    <script src="./scripts/onboarding.js"></script>
+    <script type="module" src="./scripts/utils.js"></script>
+    <script type="module" src="./scripts/context.js"></script>
+    <script type="module" src="./scripts/onboarding.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init()
