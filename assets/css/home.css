@@ -1,0 +1,134 @@
+@import './root.css';
+
+body {
+  position: relative;
+}
+
+header {
+  margin: 3.2rem 0 6.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.input-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-control input {
+  padding-left: 4.5rem;
+  height: 6.8rem;
+}
+
+.input-control img {
+  top: 50%;
+  left: 2.4rem;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3.2rem;
+}
+
+.locations h2 {
+  font-size: 1.6rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+
+  margin-bottom: 6.2rem;
+}
+
+.cards .card {
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background-color: var(--gray-100);
+  border: 1px solid var(--stroke-gray);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+
+  cursor: pointer;
+}
+
+.cards .card span {
+  align-self: flex-end;
+  font-family: var(--secondary-font);
+
+  font-size: 1.2rem;
+}
+
+.cards .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.mobile-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobile-menu li {
+  margin: 1.2rem;
+}
+
+.mobile-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.4rem;
+
+  font-size: 1.4rem;
+  color: var(--gray-400);
+}
+
+.mobile-menu a.active {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.mobile-menu a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.mobile-menu .container {
+  margin-bottom: 0;
+}
