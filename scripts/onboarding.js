@@ -1,3 +1,6 @@
+import { redirectTo } from './utils.js'
+import { onboardingEverLoadedEvent } from './context.js'
+
 let currentProgress = 0
 const btnSteps = document.querySelectorAll('.next-button')
 
@@ -15,8 +18,8 @@ function nextPrev(n) {
   currentProgress = currentProgress + n
 
   if (currentProgress >= progress.length) {
-    console.log('finish, change for another page here')
-    return false
+    onboardingEverLoadedEvent()
+    redirectTo('/signIn')
   }
 
   showProgressTab(currentProgress)
