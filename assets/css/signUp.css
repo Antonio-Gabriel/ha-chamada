@@ -1,0 +1,87 @@
+@import './root.css';
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  margin: 3.2rem 0 6.2rem;
+}
+
+header .back {
+  width: 2.6rem;
+  height: 2.6rem;
+
+  border-radius: 0.6rem;
+  background-color: var(--gray-200);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 0.4rem;
+
+  cursor: pointer;
+}
+
+header h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--dark);
+}
+
+header p {
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  color: var(--gray-400);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.form-group p {
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+  color: var(--gray-400);
+}
+
+button {
+  margin-top: 0.4rem;
+
+  width: 100%;
+  height: 5.2rem;
+  border: 0;
+  text-align: center;
+
+  border-radius: 1.2rem;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  transition: all ease-in-out 0.2s;
+
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
