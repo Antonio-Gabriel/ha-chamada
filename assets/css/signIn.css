@@ -100,11 +100,13 @@ form {
 .socials a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 1.2rem;
 
   background-color: #f6f4f4;
-
-  padding: 2.2rem 1.6rem;
+  
+  width: 15.2rem;
+  height: 5.6rem;
   border-radius: 1.2rem;
 
   transition: all ease-in-out 0.2s;
