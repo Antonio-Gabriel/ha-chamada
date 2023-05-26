@@ -1,0 +1,115 @@
+@import './root.css';
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  margin: 3.2rem 0 6.2rem;
+}
+
+header h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--dark);
+}
+
+header p {
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  color: var(--gray-400);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  margin-top: 0.4rem;
+}
+
+.btn-group > button {
+  width: 100%;
+  height: 5.2rem;
+  border: 0;
+  text-align: center;
+
+  border-radius: 1.2rem;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-group > button:hover {
+  filter: brightness(0.8);
+}
+
+.btn-group > button:nth-child(1) {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.btn-group > button:nth-child(2) {
+  background-color: var(--gray-200);
+  color: var(--gray-400);
+}
+
+.social-auth {
+  margin-top: 8.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-auth span {
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  background-color: #f6f4f4;
+
+  padding: 2.2rem 1.6rem;
+  border-radius: 1.2rem;
+
+  transition: all ease-in-out 0.2s;
+}
+
+.socials a:hover {
+  filter: brightness(0.9);
+}
